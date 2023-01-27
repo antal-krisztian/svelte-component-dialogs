@@ -57,7 +57,7 @@
 		bind:this={nativeDialog}
 		on:mousedown={onMouseDown}
 		on:cancel={onCancel}
-		transition:dialogTransition
+		transition:dialogTransition={dialog.options.transitionOptions ?? {}}
 	>
 		<svelte:component this={dialog.component} dialogRef={dialog} {...dialog.options.context} />
 	</dialog>

@@ -21,6 +21,7 @@ export interface DialogOptions<T> {
 	disableScroll: boolean;
 	modal: boolean;
 	transition: TransitionFn;
+	transitionOptions: object;
 	context: Omit<ComponentProps<TypedComponent<T>>, 'dialogRef'>;
 }
 
@@ -33,5 +34,6 @@ export const DEFAULT_DIALOG_OPTIONS: Omit<DialogOptions<never>, 'context'> = {
 	closeOnBackdropClick: false,
 	disableScroll: false,
 	modal: true,
-	transition: fade
+	transition: fade,
+	transitionOptions: { duration: 100 }
 };
