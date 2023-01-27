@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { openDialog } from '$lib';
-	import Test from './Test.svelte';
+	import GettingStarted from './GettingStarted.svelte';
+	import Introduction from './Introduction.svelte';
+	import PicoDialog from './PicoDialog.svelte';
 
 	const open = () => {
-		const dialog = openDialog(Test, {
+		const dialog = openDialog(PicoDialog, {
 			modal: true,
 			closeOnEsc: true,
 			closeOnBackdropClick: true,
@@ -16,12 +18,10 @@
 	};
 </script>
 
-<button on:click={open}>Open Dialog</button>
-<main />
+<Introduction />
+<GettingStarted />
+
+<button type="button" on:click={open}>Open Dialog</button>
 
 <style>
-	main {
-		height: 110vh;
-		background-color: violet;
-	}
 </style>
