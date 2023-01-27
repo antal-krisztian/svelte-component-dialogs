@@ -1,0 +1,55 @@
+{
+	"name": "svelte-component-dialogs",
+	"version": "0.0.1",
+	"description": "Simple dialog manager for svelte. Allows for opening svelte components as HTML5 dialogs. API inspired by the Nebular component library (Angular).",
+	"keywords": [
+		"svelte",
+		"sveltekit",
+		"dialog",
+		"modal",
+		"component",
+		"dynamic"
+	],
+	"homepage": "https://github.com/antal-krisztian/svelte-component-dialogs",
+	"bugs": {
+		"url": "https://github.com/antal-krisztian/svelte-component-dialogs/issues"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Antal Krisztián-Tamás",
+		"email": "antal.krisztian@outlook.com",
+		"url": "https://github.com/antal-krisztian"
+	},
+	"repository": "github:antal-krisztian/svelte-component-dialogs",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "svelte-kit sync && svelte-package",
+		"prepublishOnly": "echo 'Did you mean to publish `./package/`, instead of `./`?' && exit 1",
+		"test": "playwright test",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"test:unit": "vitest",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"devDependencies": {
+		"@playwright/test": "^1.28.1",
+		"@sveltejs/adapter-auto": "^1.0.0",
+		"@sveltejs/kit": "^1.0.0",
+		"@sveltejs/package": "^1.0.0",
+		"@typescript-eslint/eslint-plugin": "^5.45.0",
+		"@typescript-eslint/parser": "^5.45.0",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"prettier": "^2.8.0",
+		"prettier-plugin-svelte": "^2.8.1",
+		"svelte": "^3.54.0",
+		"svelte-check": "^3.0.1",
+		"tslib": "^2.4.1",
+		"typescript": "^4.9.3",
+		"vite": "^4.0.0",
+		"vitest": "^0.25.3"
+	},
+	"type": "module"
+}
