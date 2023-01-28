@@ -1,11 +1,10 @@
 <script lang="ts">
 	import { DialogProvider } from '$lib';
+	import Nav from '../components/Nav.svelte';
 </script>
 
-<svelte:head>
-	<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
-</svelte:head>
 <main class="container">
+	<Nav />
 	<slot />
 	<DialogProvider />
 </main>

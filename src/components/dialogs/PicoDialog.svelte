@@ -30,6 +30,7 @@
 
 <style>
 	article {
+		border-radius: 0.5rem;
 		min-width: 600px;
 	}
 
@@ -40,7 +41,13 @@
 	footer {
 		display: flex;
 		align-items: center;
+		justify-content: end;
 		gap: 1rem;
+		padding: 1rem;
+	}
+
+	header {
+		padding: 1rem;
 	}
 
 	button {

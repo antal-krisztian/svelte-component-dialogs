@@ -3,10 +3,39 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
 	</head>
 	<body>
 		<div>%sveltekit.body%</div>
 	</body>
+	<style>
+		@import 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css' screen and
+			(prefers-color-scheme: light);
+		@import 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css'
+			screen and (prefers-color-scheme: dark);
+
+		code {
+			padding: 0 !important;
+			margin: 0 !important;
+			font-size: medium !important;
+		}
+
+		pre {
+			padding: 0 !important;
+			margin: 0 !important;
+			margin-bottom: 1.5rem !important;
+		}
+
+		button {
+			width: unset;
+			padding: 0.25rem 0.5rem;
+			font-size: medium;
+		}
+
+		button.full-width {
+			width: 100%;
+		}
+	</style>
 </html>
