@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { openDialog } from '$lib';
 	import Prism from 'svelte-prism';
-	import { fly } from 'svelte/transition';
 	import BottomNav from '../../components/BottomNav.svelte';
 	import GettingStartedDialog from '../../components/dialogs/GettingStartedDialog.svelte';
 	import { INTRODUCTION_PAGE, USAGE_PAGE } from '../../utils/pages';
@@ -9,9 +8,7 @@
 	const openGettingStartedDialog = () => {
 		openDialog(GettingStartedDialog, {
 			closeOnBackdropClick: true,
-			closeOnEsc: true,
-			transition: fly,
-			transitionOptions: { duration: 100, y: 200 }
+			closeOnEsc: true
 		});
 	};
 

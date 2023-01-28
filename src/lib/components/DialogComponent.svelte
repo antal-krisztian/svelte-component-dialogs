@@ -39,15 +39,6 @@
 	});
 </script>
 
-<svelte:head>
-	{#if dialog.options.disableScroll}
-		<style>
-			body {
-				overflow: hidden;
-			}
-		</style>
-	{/if}
-</svelte:head>
 {#if !dialog.options.transition}
 	<dialog bind:this={nativeDialog} on:mousedown={onMouseDown} on:cancel={onCancel}>
 		<svelte:component this={dialog.component} dialogRef={dialog} {...dialog.options.context} />
