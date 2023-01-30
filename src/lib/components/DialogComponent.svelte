@@ -10,26 +10,24 @@
 	const dialogTransition = dialog.options.transition!;
 
 	const onMouseDown = (event: MouseEvent): void => {
-		if (
-			dialog.options.closeOnBackdropClick &&
-			dialog.options.modal &&
-			event.target === nativeDialog
-		) {
+		if (event.target === nativeDialog && dialog.options.modal) {
 			if (dialog.onBackdropClicked) {
 				dialog.onBackdropClicked();
 			}
 
-			dialog.close();
+			if (dialog.options.closeOnBackdropClick) {
+				dialog.close();
+			}
 		}
 	};
 
 	const onCancel = (event: Event): void => {
 		event.preventDefault();
-		if (dialog.options.closeOnEsc) {
-			if (dialog.onEscapePressed) {
-				dialog.onEscapePressed();
-			}
+		if (dialog.onEscapePressed) {
+			dialog.onEscapePressed();
+		}
 
+		if (dialog.options.closeOnEsc) {
 			dialog.close();
 		}
 	};
