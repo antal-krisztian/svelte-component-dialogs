@@ -13,9 +13,9 @@ export const GETTING_STARTED_PAGE: Page = {
 	name: 'Getting Started'
 };
 
-export const USAGE_PAGE: Page = {
-	link: 'usage',
-	name: 'Usage'
+export const API_PAGE: Page = {
+	link: 'api',
+	name: 'API'
 };
 
 export const EXAMPLES_PAGE: Page = {

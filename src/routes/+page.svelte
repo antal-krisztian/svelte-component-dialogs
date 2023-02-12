@@ -13,10 +13,10 @@
 		};
 	<\/script>
 	
-	<button on:click={open}>Open Dialog<\/button>
+	<button on:click={open}>Open Dialog</button>
 	<Dialog open:isOpen>
 		Content...
-	<\/Dialog>
+	</Dialog>
 	`;
 
 	const componentExample = `
@@ -33,7 +33,7 @@
 			});
 		};
 	<\/script>
-	<button on:click={open}>Open Dialog<\/button>
+	<button on:click={open}>Open Dialog</button>
 	`;
 </script>
 

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import type { ComponentType } from 'svelte';
+
 	import { openDialog, type Dialog } from '$lib';
 	import Test2 from './Test2.svelte';
 

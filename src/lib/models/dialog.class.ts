@@ -25,12 +25,12 @@ export class Dialog<T extends ComponentType> {
 	public onClose?: (result: any) => void;
 
 	/**
-	 * Close handler for the dialog, which will be called closing the dialog with by clicking on the backdrop.
+	 * Backdrop click handler for the dialog, which will be called when clicking on the backdrop. Will be called even if `closeOnBackdropClick` is set to `false`.
 	 */
 	public onBackdropClicked?: () => void;
 
 	/**
-	 * Close handler for the dialog, which will be called closing the dialog with by pressing the escape key.
+	 * Escape button handler for the dialog, which will be called when pressing the escape key. Will be called even if `closeOnEsc` is set to `false`.
 	 */
 	public onEscapePressed?: () => void;
 

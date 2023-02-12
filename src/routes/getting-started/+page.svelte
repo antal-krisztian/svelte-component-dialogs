@@ -3,7 +3,7 @@
 	import Prism from 'svelte-prism';
 	import BottomNav from '../../components/BottomNav.svelte';
 	import GettingStartedDialog from '../../components/dialogs/GettingStartedDialog.svelte';
-	import { INTRODUCTION_PAGE, USAGE_PAGE } from '../../utils/pages';
+	import { INTRODUCTION_PAGE, API_PAGE } from '../../utils/pages';
 
 	const openGettingStartedDialog = () => {
 		openDialog(GettingStartedDialog, {
@@ -58,7 +58,7 @@
 	</li>
 </ol>
 <button on:click={openGettingStartedDialog}>Open Basic Dialog</button>
-<BottomNav previousPage={INTRODUCTION_PAGE} nextPage={USAGE_PAGE} />
+<BottomNav previousPage={INTRODUCTION_PAGE} nextPage={API_PAGE} />
 
 <style>
 	button {

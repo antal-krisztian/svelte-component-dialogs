@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount, type ComponentType } from 'svelte';
+	import type { TransitionFn } from '../models/dialog-options.interface';
 	import type { Dialog } from '../models/dialog.class';
 
 	type T = $$Generic<ComponentType>;
@@ -7,7 +8,7 @@
 
 	let nativeDialog: HTMLDialogElement;
 
-	const dialogTransition = dialog.options.transition!;
+	const dialogTransition = dialog.options.transition as TransitionFn;
 
 	const onMouseDown = (event: MouseEvent): void => {
 		if (event.target === nativeDialog && dialog.options.modal) {
