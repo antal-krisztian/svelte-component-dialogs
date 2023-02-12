@@ -10,7 +10,7 @@
 <h2>openDialog</h2>
 <p>
 	Utility function used to open dialogs with the specified component and options. Returns a
-	reference to the created <code><b>Dialog</b></code> on which the user can then define callbacks and
+	reference to the created <code><i>Dialog</i></code> on which the user can then define callbacks and
 	can close the dialog.
 </p>
 <table>
@@ -40,56 +40,56 @@
 		<td>closeOnBackdropClick</td>
 		<td>
 			Whether to close the dialog when clicking the backdrop or not. This will only be applied if <code
-				><b>modal</b></code
+				><i>modal</i></code
 			>
-			is set to <code><b>true</b></code>. Default: <code> <b>false</b></code>
+			is set to <code><i>true</i></code>. Default: <code> <i>false</i></code>
 		</td>
 	</tr>
 	<tr>
 		<td>closeOnEsc</td>
 		<td>
 			Whether to close the dialog when the escape key is pressed or not. This will only be applied
-			if <code><b>modal</b></code>
-			is set to <code><b>true</b></code>. Default: <code> <b>true</b></code>
+			if <code><i>modal</i></code>
+			is set to <code><i>true</i></code>. Default: <code> <i>true</i></code>
 		</td>
 	</tr>
 	<tr>
 		<td>disableScroll</td>
 		<td>
 			Whether to disable scrolling the page while the dialog is open or not. Default: <code>
-				<b>false</b></code
+				<i>false</i></code
 			>
 		</td>
 	</tr>
 	<tr>
 		<td>modal</td>
 		<td>
-			Whether the dialog should be opened as a modal or not. Default: <code> <b>true</b></code>
+			Whether the dialog should be opened as a modal or not. Default: <code> <i>true</i></code>
 		</td>
 	</tr>
 	<tr>
 		<td>transition</td>
 		<td>
 			The transition function used when opening and closing the modal. Default: <code>
-				<b>{'{'}fade{'}'} from svelte/transition</b></code
+				<i>{'{'}fade{'}'} from svelte/transition</i></code
 			>
 		</td>
 	</tr>
 	<tr>
 		<td>transitionOptions</td>
 		<td>
-			Extra options to be passed to <code><b>transition</b></code>.
+			Extra options to be passed to <code><i>transition</i></code>.
 		</td>
 	</tr>
 	<tr>
 		<td>context</td>
 		<td>
-			Props to be passed to the <code><b>component</b></code>.
+			Props to be passed to the <code><i>component</i></code>.
 		</td>
 	</tr>
 </table>
 <h2>Dialog</h2>
-<p>Class that represents a dialog opened by <code><b>openDialog</b></code>.</p>
+<p>Class that represents a dialog opened by <code><i>openDialog</i></code>.</p>
 <table>
 	<tr>
 		<th>Name</th>
@@ -99,7 +99,7 @@
 		<td>onClose</td>
 		<td>
 			Close handler for the dialog. Will be called after manually closing the dialog with the <code
-				><b>close</b></code
+				><i>close</i></code
 			> method.
 		</td>
 	</tr>
@@ -107,28 +107,28 @@
 		<td>onBackdropClicked</td>
 		<td>
 			Backdrop click handler for the dialog, which will be called when clicking on the backdrop.
-			Will be called even if <code><b>closeOnBackdropClick</b></code> is set to
-			<code><b>false</b></code>.
+			Will be called even if <code><i>closeOnBackdropClick</i></code> is set to
+			<code><i>false</i></code>.
 		</td>
 	</tr>
 	<tr>
 		<td>onEscapePressed/td> </td><td>
 			Escape button handler for the dialog, which will be called when pressing the escape key. Will
-			be called even if <code><b>closeOnEsc</b></code> is set to
-			<code><b>false</b></code>.
+			be called even if <code><i>closeOnEsc</i></code> is set to
+			<code><i>false</i></code>.
 		</td>
 	</tr>
 	<tr>
 		<td>close</td>
 		<td>
-			Function that closes the dialog manually. Can be passed a <code><b>result</b></code> that will
-			then be further passed down to the <code><b>onClose</b></code> handler.
+			Function that closes the dialog manually. Can be passed a <code><i>result</i></code> that will
+			then be further passed down to the <code><i>onClose</i></code> handler.
 		</td>
 	</tr>
 </table>
 <h2>dialogs</h2>
 <p>
-	Svelte <code><b>writable</b></code> that holds all open dialogs. Can be used for custom open/close
+	Svelte <code><i>writable</i></code> that holds all open dialogs. Can be used for custom open/close
 	logic.
 </p>
 <table />

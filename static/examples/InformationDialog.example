@@ -1,0 +1,27 @@
+<script lang="ts">
+	import type { Dialog } from 'svelte-component-dialogs';
+
+	export let dialogRef: Dialog;
+</script>
+
+<article>
+	<header>
+		<button
+			type="button"
+			class="close"
+			aria-label="Close"
+			title="Close"
+			on:click={() => dialogRef.close()}
+		/>
+		<h4>Very important information!</h4>
+	</header>
+	<p>You should really know about this.</p>
+	<footer>
+		<button
+			type="button"
+			class="secondary"
+			style="margin-left: auto;"
+			on:click={() => dialogRef.close()}>OK</button
+		>
+	</footer>
+</article>

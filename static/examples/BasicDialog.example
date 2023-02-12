@@ -1,0 +1,10 @@
+<script>
+    import PreMadeComponent from './PreMadeComponent.svelte';
+    import { openDialog } from 'svelte-component-dialogs';
+
+    const open = () => {
+        openDialog(PreMadeComponent);
+    };
+</script>
+
+<button on:click={open}>Open Dialog</button>

@@ -1,0 +1,6 @@
+<script>
+    import { DialogProvider } from 'svelte-component-dialogs';
+</script>
+
+<slot \>
+<DialogProvider \>

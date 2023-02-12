@@ -1,9 +1,12 @@
 <script lang="ts">
 	import { openDialog } from '$lib';
 	import Prism from 'svelte-prism';
+
 	import BottomNav from '../../components/BottomNav.svelte';
 	import GettingStartedDialog from '../../components/dialogs/GettingStartedDialog.svelte';
 	import { INTRODUCTION_PAGE, API_PAGE } from '../../utils/pages';
+
+	export let data: { providerExample: string; basicDialogExample: string };
 
 	const openGettingStartedDialog = () => {
 		openDialog(GettingStartedDialog, {
@@ -11,28 +14,6 @@
 			closeOnEsc: true
 		});
 	};
-
-	const dialogProviderCode = `
-	<script>
-		import { DialogProvider } from 'svelte-component-dialogs';
-	<\/script>
-
-	<slot \\>
-	<DialogProvider \\>
-	`;
-
-	const basicDialogCode = `
-	<script>
-		import PreMadeComponent from './PreMadeComponent.svelte';
-		import { openDialog } from 'svelte-component-dialogs';
-
-		const open = () => {
-			openDialog(PreMadeComponent);
-		};
-	<\/script>
-
-	<button on:click={open}>Open Dialog</button>
-	`;
 </script>
 
 <hgroup>
@@ -43,18 +24,19 @@
 <ol>
 	<li>
 		<p>Install the package using your favored package manager:</p>
-		<p><code> npm install --save-dev svelte-component-dialogs </code></p>
+		<p><code><i>npm install --save-dev svelte-component-dialogs</i></code></p>
 	</li>
 	<li>
 		<p>
-			Add the <code>DialogProvider</code> component somewhere in your app (for SvelteKit the base
-			<code>+layout.svelte</code> file is a good place):
+			Add the <code><i>DialogProvider</i></code> component somewhere in your app (for SvelteKit the
+			base
+			<code><i>+layout.svelte</i></code> file is a good place):
 		</p>
-		<Prism language="html" source={dialogProviderCode} />
+		<Prism language="html" source={data.providerExample} />
 	</li>
 	<li>
 		<p>Start using dialogs:</p>
-		<Prism language="html" source={basicDialogCode} />
+		<Prism language="html" source={data.basicDialogExample} />
 	</li>
 </ol>
 <button on:click={openGettingStartedDialog}>Open Basic Dialog</button>

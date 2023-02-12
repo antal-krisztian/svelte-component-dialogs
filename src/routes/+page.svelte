@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Prism from 'svelte-prism';
+
 	import BottomNav from '../components/BottomNav.svelte';
 	import { GETTING_STARTED_PAGE } from '../utils/pages';
 

@@ -1,0 +1,19 @@
+<script lang="ts">
+	import type { Dialog } from 'svelte-component-dialogs';
+
+	export let dialogRef: Dialog;
+
+	const confirm = () => dialogRef.close(true);
+	const cancel = () => dialogRef.close(false);
+</script>
+
+<article>
+	<header>
+		<h4>Are you sure?</h4>
+	</header>
+	<p>This cannot be changed later.</p>
+	<footer>
+		<button type="button" class="secondary" on:click={cancel}>No</button>
+		<button type="button" on:click={confirm}>Yes</button>
+	</footer>
+</article>
