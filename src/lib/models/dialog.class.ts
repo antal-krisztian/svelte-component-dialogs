@@ -8,7 +8,7 @@ import { closeDialog } from '../utils/close-dialog.util';
  * Class representation of an open dialog.
  * Holds the component, options and close callbacks associated with the dialog.
  */
-export class Dialog<T extends ComponentType> {
+export class Dialog<T extends ComponentType = any> {
 	/**
 	 * The component acting as the content of the dialog.
 	 */
