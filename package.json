@@ -1,6 +1,6 @@
 {
 	"name": "svelte-component-dialogs",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Simple dialog manager for svelte. Allows for opening svelte components as HTML5 dialogs. API inspired by the Nebular component library (Angular).",
 	"keywords": [
 		"svelte",
