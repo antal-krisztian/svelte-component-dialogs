@@ -1,0 +1,13 @@
+<script>
+    import Dialog from 'some-package'; 
+
+    const isOpen = false;
+    const open = () => {
+        isOpen = true;
+    };
+</script>
+
+<button on:click={open}>Open Dialog</button>
+<Dialog open:isOpen>
+    Content...
+</Dialog>

@@ -4,38 +4,7 @@
 	import BottomNav from '../components/BottomNav.svelte';
 	import { GETTING_STARTED_PAGE } from '../utils/pages';
 
-	const originalExample = `
-	<script>
-		import Dialog from 'some-package'; 
-
-		const isOpen = false;
-		const open = () => {
-			isOpen = true;
-		};
-	<\/script>
-	
-	<button on:click={open}>Open Dialog</button>
-	<Dialog open:isOpen>
-		Content...
-	</Dialog>
-	`;
-
-	const componentExample = `
-	<script>
-		import PreMadeComponent from './PreMadeComponent.svelte';
-		import { openDialog } from 'svelte-component-dialogs';
-
-		const open = () => {
-			openDialog(PreMadeComponent, {
-				closeOnEsc: false,
-				context: {
-					title: 'The title'
-				}
-			});
-		};
-	<\/script>
-	<button on:click={open}>Open Dialog</button>
-	`;
+	export let data: { originalExample: string; componentExample: string };
 </script>
 
 <hgroup>
@@ -53,7 +22,7 @@
 	Svelte Component dialogs was built after I took a quick look at the available component libraries
 	for Svelte, and realized that most of them handle dialogs in the following way:
 </p>
-<Prism language="html" source={originalExample} />
+<Prism language="html" source={data.originalExample} />
 
 <p>
 	This is fine, but as a developer who has mostly worked with Angular in the past, I missed the
@@ -64,5 +33,5 @@
 		>Nebular UI Kit</a
 	>) syntax:
 </p>
-<Prism language="html" source={componentExample} />
+<Prism language="html" source={data.componentExample} />
 <BottomNav nextPage={GETTING_STARTED_PAGE} />
