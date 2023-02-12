@@ -7,6 +7,10 @@
 	export let data: { originalExample: string; componentExample: string };
 </script>
 
+<svelte:head>
+	<title>Introduction</title>
+</svelte:head>
+
 <hgroup>
 	<h1>Introduction</h1>
 	<h2>Easy to use dialog manager for Svelte</h2>

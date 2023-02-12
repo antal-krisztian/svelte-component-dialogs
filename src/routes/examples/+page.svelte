@@ -44,6 +44,10 @@
 	};
 </script>
 
+<svelte:head>
+	<title>Examples</title>
+</svelte:head>
+
 <hgroup>
 	<h1>Examples</h1>
 	<h2>More complex examples</h2>

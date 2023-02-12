@@ -3,6 +3,10 @@
 	import { EXAMPLES_PAGE, GETTING_STARTED_PAGE } from '../../utils/pages';
 </script>
 
+<svelte:head>
+	<title>API</title>
+</svelte:head>
+
 <hgroup>
 	<h1>API</h1>
 	<h2>Available options</h2>

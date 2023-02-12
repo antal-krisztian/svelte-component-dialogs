@@ -16,6 +16,10 @@
 	};
 </script>
 
+<svelte:head>
+	<title>Getting Started</title>
+</svelte:head>
+
 <hgroup>
 	<h1>Getting Started</h1>
 	<h2>Three steps to start opening dialogs</h2>
