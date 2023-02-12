@@ -10,7 +10,7 @@
 		"component",
 		"dynamic"
 	],
-	"homepage": "https://github.com/antal-krisztian/svelte-component-dialogs",
+	"homepage": "https://svelte-component-dialogs.vercel.app",
 	"bugs": {
 		"url": "https://github.com/antal-krisztian/svelte-component-dialogs/issues"
 	},
