@@ -31,6 +31,10 @@
 </nav>
 
 <style>
+	nav {
+		flex-wrap: wrap;
+	}
+
 	li {
 		display: flex;
 		align-items: center;

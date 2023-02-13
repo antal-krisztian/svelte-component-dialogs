@@ -29,7 +29,8 @@
 <style>
 	article {
 		border-radius: 0.5rem;
-		min-width: 600px;
+		width: 600px;
+		max-width: 90%;
 	}
 
 	h4 {
