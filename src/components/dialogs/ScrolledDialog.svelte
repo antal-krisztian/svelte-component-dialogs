@@ -60,7 +60,8 @@
 <style>
 	article {
 		border-radius: 0.5rem;
-		min-width: 600px;
+		width: 600px;
+		max-width: 90%;
 		max-height: 600px;
 		overflow: hidden;
 		display: flex;
