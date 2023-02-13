@@ -57,6 +57,10 @@ Some things that still need to be done:
 - Add github actions for linting, building and testing the project
 - Improve documentation
 
+# Acknowledgments
+
+- [svelte-dialogs](https://github.com/bibizio/svelte-dialogs) provides similar functionality, with a somewhat different API
+
 # License
 
 MIT
